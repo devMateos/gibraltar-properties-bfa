@@ -23,8 +23,8 @@ body h5, body .h5{color: var(--main-white); font-family: 'Playfair Display', ser
 /* Icons */
 .right-arrow, .right-arrow2{align-items: center; display: flex; left: -10px; position: relative;}
 .right-arrow:hover, .right-arrow2:hover{opacity: .65;}
-.right-arrow::before, .right-arrow2::after{background-image: url(assets/svg/right-circle.svg); background-repeat: no-repeat;background-size: contain; content: ""; display: inline-block; height: 60px; margin-right: 8px; width: 60px;}
-.right-arrow-purple::before{background-image: url(assets/svg/right-circle-purple.svg)!important;}
+.right-arrow::before, .right-arrow2::after{background-image: url(https://devmateos.github.io/gibraltar-properties-bfa/assets/svg/right-circle.svg); background-repeat: no-repeat;background-size: contain; content: ""; display: inline-block; height: 60px; margin-right: 8px; width: 60px;}
+.right-arrow-purple::before{background-image: url(https://devmateos.github.io/gibraltar-properties-bfa/assets/svg/right-circle-purple.svg)!important;}
 
 /* -------------------------------------------- */
 body{padding-top: 100px; z-index: 20;}
@@ -56,7 +56,7 @@ header .dropdown-menu > ul > li > a { display: inline-block; height: 28px; posit
 header .dropdown-menu > ul > li > a:hover { color: black; }
 header .dropdown-menu > ul > li > a::after { background-color: transparent; bottom: 5px; content: ""; display: inline-block; height: 4px; left: 0; position: absolute; transition: .75s all ease; -webkit-transition: .75s all ease; width: 0; }
 header .dropdown-menu > ul > li > a:hover::after { background-color: var(--main-purple); width: 100%;}
-header .dropdown-menu .menu-squares { background-image: url(assets/img/menu-squares.jpg); background-repeat: no-repeat; background-size: contain; bottom: 0; height: 120px; position: absolute; right: 0; width: 120px; }
+header .dropdown-menu .menu-squares { background-image: url(https://devmateos.github.io/gibraltar-properties-bfa/assets/img/menu-squares.jpg); background-repeat: no-repeat; background-size: contain; bottom: 0; height: 120px; position: absolute; right: 0; width: 120px; }
 header .navbar-nav > li:first-child:hover .dropdown-menu.estate-agency-menu, header .dropdown-menu.estate-agency-menu:hover { visibility: visible; }
 header .navbar-nav > li:nth-child(2):hover .dropdown-menu.valuers-menu, header .dropdown-menu.valuers-menu:hover { visibility: visible; }
 header .navbar-nav > li:nth-child(3):hover .dropdown-menu.management-menu, header .dropdown-menu.management-menu:hover { visibility: visible; }
@@ -64,8 +64,8 @@ header .navbar-nav > li:nth-child(3):hover .dropdown-menu.management-menu, heade
 /* MAIN */
 
 /* HOME SLIDER SECTION */
-#home-slider div.backgroundimg{background-image: url(assets/img/slider-1.png); background-repeat: no-repeat; background-position: top center; background-size: cover; height: 600px;}
-#home-slider div.slide-squares{background-image: url(assets/img/slide-squares.png); background-repeat: no-repeat; background-size: contain; height: 500px; width: 500px; position: relative; left: calc(100% - 500px);}
+#home-slider div.backgroundimg{background-image: url(https://devmateos.github.io/gibraltar-properties-bfa/assets/img/slider-1.png); background-repeat: no-repeat; background-position: top center; background-size: cover; height: 600px;}
+#home-slider div.slide-squares{background-image: url(https://devmateos.github.io/gibraltar-properties-bfa/assets/img/slide-squares.png); background-repeat: no-repeat; background-size: contain; height: 500px; width: 500px; position: relative; left: calc(100% - 500px);}
 #home-slider h2, #home-slider h3, #home-slider p>a{color: var(--main-white);}
 #home-slider div.backgroundimg>div.slide-content{ position: absolute; top: 250px; left: 13%; width: fit-content;}
 
@@ -88,26 +88,26 @@ header .navbar-nav > li:nth-child(3):hover .dropdown-menu.management-menu, heade
 /* SERVICES */
 #services .row>div{background-position: 0 bottom; background-repeat: no-repeat; background-size: cover; height: 500px; padding: 320px 20px 20px 20px; position: relative; }
 #services > div > .row > div::before {content: ""; background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%); display: inline-block; height: 100%; left: 0; position: absolute; top: 0; width: 100%; }
-#services .row>div:nth-child(1){background-image: url(assets/img/bfa-office.jpg);}
-#services .row>div:nth-child(2){background-image: url(assets/img/property-with-pool.jpg);}
-#services .row>div:nth-child(3){background-image: url(assets/img/estates-managers.jpg);}
+#services .row>div:nth-child(1){background-image: url(https://devmateos.github.io/gibraltar-properties-bfa/assets/img/bfa-office.jpg);}
+#services .row>div:nth-child(2){background-image: url(https://devmateos.github.io/gibraltar-properties-bfa/assets/img/property-with-pool.jpg);}
+#services .row>div:nth-child(3){background-image: url(https://devmateos.github.io/gibraltar-properties-bfa/assets/img/estates-managers.jpg);}
 #services .row>div>div{ height: fit-content; position: relative; z-index: 1;}
 #services .row>div>div>p{font-size: 15px; margin-left: 10px;}
 #services .row>div>div>p::after{min-width: 60px;}
 
 /* NEW DEVELOPMENTS */
 #new-developments div.row > div { height: 460px;}
-#new-developments div.row > div:first-child {background-image: url(assets/img/gibraltar-new-developments.jpg); background-position: 0 bottom; background-repeat: no-repeat; background-size: cover;}
+#new-developments div.row > div:first-child {background-image: url(https://devmateos.github.io/gibraltar-properties-bfa/assets/img/gibraltar-new-developments.jpg); background-position: 0 bottom; background-repeat: no-repeat; background-size: cover;}
 #new-developments div.new-developments-content {margin-top: -50px; padding: 0 103px;}
-#new-developments .bottom-right-squares {background-image: url(assets/img/bottom-right-squares.png); height: 135px; width: 135px; position: relative; left: calc(100% - 122px); top: calc(100% - 135px)}
+#new-developments .bottom-right-squares {background-image: url(https://devmateos.github.io/gibraltar-properties-bfa/assets/img/bottom-right-squares.png); height: 135px; width: 135px; position: relative; left: calc(100% - 122px); top: calc(100% - 135px)}
 
 /* TESTIMONIAL */
-#testimonial #testimonial-bg-image{background-image: url(assets/img/happy-family-with-a-dog.jpg); background-position: 0 bottom; background-repeat: no-repeat; background-size: cover; height: 500px;}
+#testimonial #testimonial-bg-image{background-image: url(https://devmateos.github.io/gibraltar-properties-bfa/assets/img/happy-family-with-a-dog.jpg); background-position: 0 bottom; background-repeat: no-repeat; background-size: cover; height: 500px;}
 #testimonial > .container-fluid > .row > div:last-child {height: 670px; margin-top: -350px; padding: 90px 60px 50px; position: relative;}
 #testimonial > .container-fluid > .row > div:last-child *{margin-bottom: 15px;}
 #testimonial > .container-fluid > .row > div:last-child > div {padding: 0 80px;}
-#testimonial > .container-fluid > .row > div:last-child > div::after { content: ""; background-image: url(assets/img/top-right-squares.png); background-position: center; background-repeat: no-repeat; background-size: contain; display: inline-block; height: 134px; width: 134px; position: absolute; left: calc(100% - 134px); top: 0;}
-#testimonial > .container-fluid > .row > div:last-child > div > p::before {content: ""; background-image: url(assets/img/quote-left-icon.png); background-position: center; background-repeat: no-repeat; background-size: contain; display: inline-block; height: 60px; width: 60px; position: absolute; left: 60px;}
+#testimonial > .container-fluid > .row > div:last-child > div::after { content: ""; background-image: url(https://devmateos.github.io/gibraltar-properties-bfa/assets/img/top-right-squares.png); background-position: center; background-repeat: no-repeat; background-size: contain; display: inline-block; height: 134px; width: 134px; position: absolute; left: calc(100% - 134px); top: 0;}
+#testimonial > .container-fluid > .row > div:last-child > div > p::before {content: ""; background-image: url(https://devmateos.github.io/gibraltar-properties-bfa/assets/img/quote-left-icon.png); background-position: center; background-repeat: no-repeat; background-size: contain; display: inline-block; height: 60px; width: 60px; position: absolute; left: 60px;}
 #testimonial > .container-fluid > .row > div:last-child > p:last-child {width: 60px; position: absolute; left: calc(100% - 150px); top: calc(100% - 150px);}
 
 /* LATEST NEWS */
@@ -125,7 +125,7 @@ header .navbar-nav > li:nth-child(3):hover .dropdown-menu.management-menu, heade
 #latest-news .container-fluid > .row:nth-child(3) > a:hover {color: #007bff!important;}
 
 /* GET IN TOUCH */
-#get-in-touch > div { background-attachment: fixed; background-image: url(assets/img/steps-bkg.jpg); background-position: center; background-repeat: no-repeat; background-size: cover; height: 440px; padding: 120px 15px;}
+#get-in-touch > div { background-attachment: fixed; background-image: url(https://devmateos.github.io/gibraltar-properties-bfa/assets/img/steps-bkg.jpg); background-position: center; background-repeat: no-repeat; background-size: cover; height: 440px; padding: 120px 15px;}
 #get-in-touch > div .row { max-width: 730px; }
 #get-in-touch > div .row > * { margin-bottom: 20px; }
 #get-in-touch > div .row > h3 { font-style: normal; }

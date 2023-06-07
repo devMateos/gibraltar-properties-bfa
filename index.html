@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gibraltar Properties - BFA</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/vendor/bootstrap-5.3.0-alpha3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/vendor/fontawesome-free-6.4.0-web/css/all.min.css">
+    <link rel="stylesheet" href="assets/vendor/bootstrap-select-1.13.2/bootstrap-select.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <script src="assets/vendor/jquery-3.2.1.min.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-4 col-lg-3 py-2">
+                    <a href=""><img id="header-logotype" src="assets/img/bfagib-logo-color.png"
+                            alt="Brian Francis & Associates logotype"></a>
+                </div>
+                <div class="col-8 col-lg-9 text-end d-flex justify-content-end align-items-center">
+                    <ul class="nav navbar-nav d-none d-lg-inline">
+                        <li>
+                            <a href="">BFA ESTATE AGENCY</a>
+                            <ul class="dropdown-menu estate-agency-menu">
+                                <ul>
+                                    <a href="" class="purple-text">SALES</a>
+                                    <li><a href="">Residential</a></li>
+                                    <li><a href="">Parking for Sale</a></li>
+                                    <li><a href="">New Developments</a></li>
+                                    <li><a href="">FAQ's</a></li>
+                                    <li><a href="">Category 2</a></li>
+                                    <li><a href="">HEPPS</a></li>
+                                    <li><a href="">Restricted Market</a></li>
+                                    <li><a href="">Stamp duty</a></li>
+                                    <li><a href="">Code of Conduct</a></li>
+                                </ul>
+                                <ul>
+                                    <a href="" class="purple-text">RENTALS</a>
+                                    <li><a href="">Rental Properties</a></li>
+                                    <li><a href="">Parking to Rent</a></li>
+                                    <li><a href="">Tenants Information</a></li>
+                                    <li><a href="">Landlords Information</a></li>
+                                </ul>
+                                <ul>
+                                    <a href="" class="purple-text">COMMERCIALS</a>
+                                    <li><a href="">Buildings</a></li>
+                                    <li><a href="">Freehold properties</a></li>
+                                    <li><a href="">Offices</a></li>
+                                    <li><a href="">Parking</a></li>
+                                    <li><a href="">Restaurant</a></li>
+                                    <li><a href="">Retail</a></li>
+                                    <li><a href="">Warehouse / Stores</a></li>
+                                </ul>
+                                <ul>
+                                    <a href="" class="purple-text">USEFUL INFORMATION</a>
+                                    <li><a href="">Education</a></li>
+                                    <li><a href="">Health</a></li>
+                                    <li><a href="">Taxation</a></li>
+                                </ul>
+                                <div class="menu-squares"></div>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">BFA VALUERS</a>
+                            <ul class="dropdown-menu valuers-menu">
+                                <ul>
+                                    <a href="" class="purple-text">INFORMATION</a>
+                                    <li><a href="">Valuers</a></li>
+                                    <li><a href="">Services</a></li>
+                                    <li><a href="">FAQ's</a></li>
+                                </ul>
+                                <div class="menu-squares"></div>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">BFA MANAGEMENT</a>
+                            <ul class="dropdown-menu management-menu">
+                                <ul>
+                                    <a href="" class="purple-text">ESTATE MANAGEMENT</a>
+                                    <li><a href="">Information</a></li>
+                                    <li><a href="">Management Team</a></li>
+                                    <li><a href="">FAQ's</a></li>
+                                </ul>
+                                <ul>
+                                    <a href="" class="purple-text">COMMERCIAL AND PRE-WAR</a>
+                                    <li><a href="">Services</a></li>
+                                    <li><a href="">FAQ's</a></li>
+                                </ul>
+                                <div class="menu-squares"></div>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="d-flex mb-0 gap-2 me-4">
+                        <li><a href="">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                    <path
+                                        d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" />
+                                </svg>
+                            </a></li>
+                        <li><a href="">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path
+                                        d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" />
+                                </svg>
+                            </a></li>
+                    </ul>
+                    <div class="rics">
+                        <img src="assets/img/rics-logo-color.png" alt="Rics logotype">
+                    </div>
+                    <button class="ps-3" id="header-button">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                            <path
+                                d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="home-slider">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="backgroundimg">
+                            <div class="slide-squares"></div>
+                            <div class="slide-content">
+                                <h3>International Standars</h3>
+                                <h2>Local Expertise</h2>
+                                <p><a href="" class="right-arrow">WHO WE ARE</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="search">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="container">
+                                <div class="col-12 mb-4">
+                                    <h5>Property Search</h5>
+                                </div>
+                                <div class="col-12">
+                                    <form action="">
+                                        <div class="row ms-0">
+                                            <label for="" class="col-2 bgc--white purple-text"
+                                                id="sales-label"><span>Sales</span></label>
+                                            <label for="" class="col-2" id="rentals-label"><span>Rentals</span></label>
+                                            <label for="" class="col-2"
+                                                id="commercials-label"><span>Commercials</span></label>
+                                            <label for="" class="col-2"
+                                                id="developments-label"><span>Developments</span></label>
+                                            <label for="" class="col-2"
+                                                id="investments-label"><span>Investments</span></label>
+                                        </div>
+                                        <div class="row ms-0">
+                                            <div class="fields col-12 p-0" id="sales-form">
+
+                                                <div>
+                                                    <select name="district[]" id="searchFormDistrict"
+                                                        title="All Districts" class="selectpicker searchFormDistrict"
+                                                        multiple="">
+                                                        <option value="">All Districts</option>
+                                                        <option value="d2">Eastside (3)</option>
+                                                        <option value="d6">Ocean Village (4)</option>
+                                                        <option value="d5">Queensway Marina (2)</option>
+                                                        <option value="d4">South District (14)</option>
+                                                        <option value="d3">Town Area (12)</option>
+                                                        <option value="d7">Upper Town (6)</option>
+                                                        <option value="d1">Westside (10)</option>
+                                                    </select>
+                                                </div>
+                                                <div>
+                                                    <select name="location[]" id="searchFormLocation"
+                                                        title="All Locations" class="selectpicker" multiple="">
+                                                        <option value="124">Admirals Place (0)</option>
+                                                        <option value="2791">Alameda Estate (0)</option>
+                                                        <option value="113">Anchorage (1)</option>
+                                                        <option value="2799">Arengos Gardens (2)</option>
+                                                        <option value="111">Atlantic Suites (0)</option>
+                                                        <option value="2689">Barley Hill House (1)</option>
+                                                        <option value="2677">Battery Close (0)</option>
+                                                        <option value="155">Bayview Terraces (0)</option>
+                                                        <option value="2947">Beachview Terraces (4)</option>
+                                                        <option value="2755">Benzimra's Alley (0)</option>
+                                                        <option value="2719">Bomb House Lane (0)</option>
+                                                        <option value="12">Both Worlds (0)</option>
+                                                        <option value="2795">Bourne Place (0)</option>
+                                                        <option value="2688">Bright Cottage (0)</option>
+                                                        <option value="13">Brympton (0)</option>
+                                                        <option value="2777">Buena Vista Mews (0)</option>
+                                                        <option value="160">Buena Vista Park Villas (1)</option>
+                                                        <option value="2966">Cannon Lane (0)</option>
+                                                        <option value="40">Carltree House (0)</option>
+                                                        <option value="2745">Carmel House (0)</option>
+                                                        <option value="2674">Casemates Square (0)</option>
+                                                        <option value="18">Catalan Bay (1)</option>
+                                                        <option value="2669">Catalan Gardens (0)</option>
+                                                        <option value="2713">Centre Plaza (0)</option>
+                                                        <option value="2757">Charles V Ramp (0)</option>
+                                                        <option value="2967">Chatham Counterguard (0)</option>
+                                                        <option value="106">City Mill Lane (0)</option>
+                                                        <option value="2790">Clemence Suites (0)</option>
+                                                        <option value="121">Clifftop House (0)</option>
+                                                        <option value="38">Cliftons (0)</option>
+                                                        <option value="2949">College Lane (0)</option>
+                                                        <option value="2950">Convent Place (0)</option>
+                                                        <option value="2666">Cormorant Wharf (0)</option>
+                                                        <option value="95">Cornwalls Centre (1)</option>
+                                                        <option value="143">Cornwalls Lane (0)</option>
+                                                        <option value="2707">Cornwalls Parade (0)</option>
+                                                        <option value="2951">Crutchett's Ramp (0)</option>
+                                                        <option value="2798">Cumberland Heights (0)</option>
+                                                        <option value="2751">Cumberland Road (1)</option>
+                                                        <option value="156">Cumberland Terraces (1)</option>
+                                                        <option value="2954">Demaya's Ramp (0)</option>
+                                                        <option value="16">Devils Tower Road (1)</option>
+                                                        <option value="2685">Dextrous House (0)</option>
+                                                        <option value="2750">Don House Arcade (0)</option>
+                                                        <option value="2964">E1 (0)</option>
+                                                        <option value="42">Eastern side (0)</option>
+                                                        <option value="2740">Edward House (0)</option>
+                                                        <option value="2684">Elkington House (0)</option>
+                                                        <option value="134">Elliot's Battery (0)</option>
+                                                        <option value="2771">Engineers Lane (0)</option>
+                                                        <option value="2805">Eurocity (0)</option>
+                                                        <option value="2702">Eurolife Building (0)</option>
+                                                        <option value="2670">Europa Mews (0)</option>
+                                                        <option value="2761">Europa Road (0)</option>
+                                                        <option value="2958">Europa Road (0)</option>
+                                                        <option value="47">EuroPlaza (0)</option>
+                                                        <option value="49">Europort (0)</option>
+                                                        <option value="11">EuroTowers (2)</option>
+                                                        <option value="123">Filomena House (1)</option>
+                                                        <option value="2956">Fish Market Road (0)</option>
+                                                        <option value="2756">Flat Bastion Road (0)</option>
+                                                        <option value="2944">Forbes 1848 (0)</option>
+                                                        <option value="2943">Forbes 1848 (0)</option>
+                                                        <option value="2767">Gardiner's House (0)</option>
+                                                        <option value="20">Gardiners Road (1)</option>
+                                                        <option value="33">Gardiners View (0)</option>
+                                                        <option value="2733">Garrison House (0)</option>
+                                                        <option value="2754">Gavino's Court (0)</option>
+                                                        <option value="2691">Gavino's Passage (0)</option>
+                                                        <option value="96">Genista House (0)</option>
+                                                        <option value="110">George's Lane (0)</option>
+                                                        <option value="93">Gibraltar Heights (1)</option>
+                                                        <option value="2961">Governor's Lane (0)</option>
+                                                        <option value="2957">Governor's Parade (0)</option>
+                                                        <option value="2945">Governor's Street (1)</option>
+                                                        <option value="2687">Grafton House (0)</option>
+                                                        <option value="15">Harbour Views (4)</option>
+                                                        <option value="122">Highcliffe House (0)</option>
+                                                        <option value="2960">Horse Barrack Lane (0)</option>
+                                                        <option value="2952">Hospital Steps (0)</option>
+                                                        <option value="2736">Humphrey's Bungalow (0)</option>
+                                                        <option value="2690">ICC Building (0)</option>
+                                                        <option value="2778">Irish Town (0)</option>
+                                                        <option value="25">Jumpers Building (0)</option>
+                                                        <option value="2959">King George The V Ramp (0)</option>
+                                                        <option value="120">Kings Wharf (0)</option>
+                                                        <option value="167">Kings Wharf Quay 27 (0)</option>
+                                                        <option value="2789">Kings Wharf- Quay 29 (0)</option>
+                                                        <option value="2728">Leon House (0)</option>
+                                                        <option value="2682">Library Gardens (0)</option>
+                                                        <option value="88">Library Ramp (0)</option>
+                                                        <option value="2770">Little Genoa (0)</option>
+                                                        <option value="114">Lord Napier Mews (0)</option>
+                                                        <option value="2715">Lynche's Lane (0)</option>
+                                                        <option value="107">Main Street (6)</option>
+                                                        <option value="36">Marina Bay (1)</option>
+                                                        <option value="24">Marina Court (0)</option>
+                                                        <option value="94">Marina Views (0)</option>
+                                                        <option value="2774">Mediterranean Terrace (0)</option>
+                                                        <option value="2671">Medview Terrace (Catalan Bay) (0)</option>
+                                                        <option value="44">Merlot House (0)</option>
+                                                        <option value="158">MidTown (1)</option>
+                                                        <option value="2965">Mons Calpe Mews (0)</option>
+                                                        <option value="21">Montagu Crescent (1)</option>
+                                                        <option value="4">Montagu Gardens (1)</option>
+                                                        <option value="130">Mount Road (0)</option>
+                                                        <option value="2722">Mountview Terrace (0)</option>
+                                                        <option value="108">Naval Hospital Hill (0)</option>
+                                                        <option value="2710">Naval Hospital Road (0)</option>
+                                                        <option value="2773">Nelson's View (0)</option>
+                                                        <option value="45">Northview Terrace (0)</option>
+                                                        <option value="98">Ocean Heights (1)</option>
+                                                        <option value="2794">Ocean Village (0)</option>
+                                                        <option value="135">Ocean Village - Grand Ocean Plaza (0)
+                                                        </option>
+                                                        <option value="137">Ocean Village - Majestic Ocean Plaza (1)
+                                                        </option>
+                                                        <option value="164">Ocean Village - Ocean Spa Plaza (0)</option>
+                                                        <option value="136">Ocean Village - Royal Ocean Plaza (0)
+                                                        </option>
+                                                        <option value="2946">Ocean Village- Imperial Ocean Plaza (0)
+                                                        </option>
+                                                        <option value="2769">Off Main street (0)</option>
+                                                        <option value="2803">OFF PLAN (0)</option>
+                                                        <option value="140">Old Brymtpon Close (0)</option>
+                                                        <option value="2676">Ordnance Wharf (0)</option>
+                                                        <option value="2772">Parking Spaces/Garages (0)</option>
+                                                        <option value="23">Peninsular Heights (0)</option>
+                                                        <option value="2788">Pitmans Court (0)</option>
+                                                        <option value="162">Plata Villa (0)</option>
+                                                        <option value="26">Portland House (0)</option>
+                                                        <option value="127">Prince Edward's Road (0)</option>
+                                                        <option value="2800">Prince Edwards Gate (0)</option>
+                                                        <option value="2667">Queensway Quay (0)</option>
+                                                        <option value="154">Queensway Quay - Cormorant Wharf (0)
+                                                        </option>
+                                                        <option value="2942">Queensway Quay - Moorland House (0)
+                                                        </option>
+                                                        <option value="153">Queensway Quay - Ordinance Wharf (0)
+                                                        </option>
+                                                        <option value="152">Queensway Quay - Ragged staff wharf (2)
+                                                        </option>
+                                                        <option value="139">Regal House (0)</option>
+                                                        <option value="2802">Road to the Lines (0)</option>
+                                                        <option value="115">Rock Gardens (0)</option>
+                                                        <option value="2753">Rodgers Road (0)</option>
+                                                        <option value="129">Rosbay Court (0)</option>
+                                                        <option value="2717">Rosia Cottages (0)</option>
+                                                        <option value="2786">Rosia Court (0)</option>
+                                                        <option value="126">Rosia Dale (0)</option>
+                                                        <option value="19">Rosia Plaza (0)</option>
+                                                        <option value="125">Sandpits (0)</option>
+                                                        <option value="77">Scud Hill (0)</option>
+                                                        <option value="2758">Serfaty's Passage (0)</option>
+                                                        <option value="2764">Shackelton House (0)</option>
+                                                        <option value="2673">Sir William Jackson Grove (0)</option>
+                                                        <option value="2955">South Barrack Ramp (0)</option>
+                                                        <option value="1">South District (11)</option>
+                                                        <option value="2792">Spain - Bahia La Roca (0)</option>
+                                                        <option value="2776">St. Peter's Close (0)</option>
+                                                        <option value="2678">Sunnyside House (0)</option>
+                                                        <option value="2672">Sunrise View (Eastern Beach) (0)</option>
+                                                        <option value="27">Sunset Close (0)</option>
+                                                        <option value="165">Tarik Views (0)</option>
+                                                        <option value="163">The Arches (1)</option>
+                                                        <option value="2679">The Cliftons (0)</option>
+                                                        <option value="2941">The Hub (0)</option>
+                                                        <option value="132">The Island (0)</option>
+                                                        <option value="39">The Mount (0)</option>
+                                                        <option value="2963">The Residence (0)</option>
+                                                        <option value="133">The Sails (0)</option>
+                                                        <option value="2948">The Sanctuary (0)</option>
+                                                        <option value="3">Town Area (1)</option>
+                                                        <option value="2681">Town Centre (0)</option>
+                                                        <option value="131">Town Range (0)</option>
+                                                        <option value="101">Tradewinds (1)</option>
+                                                        <option value="104">Trafalgar House (0)</option>
+                                                        <option value="2953">Tuckey's Lane (0)</option>
+                                                        <option value="2775">Turnbull's Lane (0)</option>
+                                                        <option value="68">Upper Rock (1)</option>
+                                                        <option value="2">Upper Town (1)</option>
+                                                        <option value="2692">Upper Town Area (1)</option>
+                                                        <option value="2721">Victoria Residency (0)</option>
+                                                        <option value="28">Vineyards (0)</option>
+                                                        <option value="46">Watergardens (1)</option>
+                                                        <option value="2759">Waterport Area (0)</option>
+                                                        <option value="2779">Waterport Place (0)</option>
+                                                        <option value="157">Waterport Terraces (1)</option>
+                                                        <option value="2683">Waverley House (0)</option>
+                                                        <option value="2668">Wellington Court (0)</option>
+                                                        <option value="2787">West One (0)</option>
+                                                        <option value="17">West Side Area (0)</option>
+                                                        <option value="2665">Westview Park (0)</option>
+                                                        <option value="2785">Whitewater House (0)</option>
+                                                        <option value="29">Withams Road (0)</option>
+                                                        <option value="2797">World Trade Center (0)</option>
+                                                    </select>
+                                                </div>
+                                                <div>
+                                                    <select name="bedrooms" class="selectpicker" tabindex="-98">
+                                                        <option value="">Beds</option>
+                                                        <option value="0">Studio</option>
+                                                        <option value="1">1+</option>
+                                                        <option value="2">2+</option>
+                                                        <option value="3">3+</option>
+                                                        <option value="4">4+</option>
+                                                    </select>
+                                                </div>
+                                                <div>
+                                                    <select name="min_price" id="searchFormMinPrice"
+                                                        class="selectpicker searchFormMinPrice" tabindex="-98">
+                                                        <option value="" selected="">Min Price</option>
+                                                        <option value="0">£0</option>
+                                                        <option value="50000">£50,000</option>
+                                                        <option value="100000">£100,000</option>
+                                                        <option value="200000">£200,000</option>
+                                                        <option value="300000">£300,000</option>
+                                                        <option value="400000">£400,000</option>
+                                                        <option value="500000">£500,000</option>
+                                                        <option value="600000">£600,000</option>
+                                                        <option value="700000">£700,000</option>
+                                                        <option value="800000">£800,000</option>
+                                                        <option value="900000">£900,000</option>
+                                                        <option value="1000000">£1,000,000</option>
+                                                        <option value="1100000">£1,100,000</option>
+                                                        <option value="1200000">£1,200,000</option>
+                                                        <option value="1300000">£1,300,000</option>
+                                                        <option value="1400000">£1,400,000</option>
+                                                        <option value="1500000">£1,500,000</option>
+                                                        <option value="1600000">£1,600,000</option>
+                                                        <option value="1700000">£1,700,000</option>
+                                                        <option value="1800000">£1,800,000</option>
+                                                        <option value="1900000">£1,900,000</option>
+                                                    </select>
+                                                </div>
+                                                <div>
+                                                    <select name="max_price" id="searchFormMaxPrice"
+                                                        class="selectpicker searchFormMaxPrice" tabindex="-98">
+                                                        <option value="" selected="">Max Price</option>
+                                                        <option value="50000">£50,000</option>
+                                                        <option value="100000">£100,000</option>
+                                                        <option value="200000">£200,000</option>
+                                                        <option value="300000">£300,000</option>
+                                                        <option value="400000">£400,000</option>
+                                                        <option value="500000">£500,000</option>
+                                                        <option value="600000">£600,000</option>
+                                                        <option value="700000">£700,000</option>
+                                                        <option value="800000">£800,000</option>
+                                                        <option value="900000">£900,000</option>
+                                                        <option value="1000000">£1,000,000</option>
+                                                        <option value="1100000">£1,100,000</option>
+                                                        <option value="1200000">£1,200,000</option>
+                                                        <option value="1300000">£1,300,000</option>
+                                                        <option value="1400000">£1,400,000</option>
+                                                        <option value="1500000">£1,500,000</option>
+                                                        <option value="1600000">£1,600,000</option>
+                                                        <option value="1700000">£1,700,000</option>
+                                                        <option value="1800000">£1,800,000</option>
+                                                        <option value="1900000">£1,900,000</option>
+                                                        <option value="9999999999">£2,000,000+</option>
+                                                    </select>
+                                                </div>
+                                                <div>
+                                                    <input type="text" name="reference" placeholder="Reference">
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="welcome">
+            <div class="container pb-5 pt-5">
+                <div class="row">
+                    <div class="col-lg-4 text-lg-end ps-5">
+                        <h3 class="light-text">Welcome to</h3>
+                        <h1 class="purple-text">BFA</h1>
+                    </div>
+                    <div class="col-lg-8 ps-5">
+                        <p>Brian Francis & Associates is a firm of Chartered Surveyors in Gibraltar with a specialist
+                            knowledge of the local property market. We have been at the forefront of a rapidly growing
+                            market since 1986, providing a broad based property consultancy service to suit the needs of
+                            individuals, corporate and International clients.</p>
+                        <p><a href="" class="right-arrow right-arrow-purple">FIND OUT MORE</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="services">
+            <div class="container-fluid pt-3 pb-3">
+                <div class="row">
+                    <h5 class="text-center purple-text mb-4">Our expertise within our Group combines three professional
+                        services:</h5>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-lg-4 white-text">
+                        <div>
+                            <h4><a href="" class="h4 white-text">Estate Agency</a></h4>
+                            <p class="right-arrow2">Search for resales, rentals, new developments and commercials in
+                                Gibraltar & Spain.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4 white-text">
+                        <div>
+                            <h4><a href="" class="h4 white-text">Valuers</a></h4>
+                            <p class="right-arrow2">Comprised of 3 Chartered Surveyors, who deal with the survey and
+                                valuation of real property for a multitude of purposes.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4 white-text">
+                        <div>
+                            <h4><a href="" class="h4 white-text">Management</a></h4>
+                            <p class="right-arrow2">Property management currently boasting a portfolio of 61 Residential
+                                and Commercial buildings.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="new-developments">
+            <div class="container-fluid mt-5">
+                <div class="row">
+                    <div class="col-lg-6"></div>
+                    <div class="col-lg-6 bgc--dark-purple">
+                        <div class="bottom-right-squares"></div>
+                        <div class="new-developments-content">
+                            <h5>Gibraltar</h5>
+                            <h4>New Developments</h4>
+                            <p class="white-text">In the recent 30 years Gibraltar has experienced a dramatic change in
+                                its new residential and commercial areas to such an extend that it has changed the
+                                demographics of the Town Centre.</p>
+                            <p class="right-arrow white-text">FIND OUT MORE</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="testimonial">
+            <div class="container-fluid mt-5">
+                <div class="row px-3">
+                    <div class="col-lg-6" id="testimonial-bg-image"></div>
+                    <div class="col-lg-8 ms-auto bgc--main-purple white-text">
+                        <h5>The Highest Standards.</h5>
+                        <h4>The Happiest Clients</h4>
+                        <div>
+                            <p>Many thanks to the BFA team for their hard work in helping us to secure our new home.
+                                Melanie was friendly and professional at all times making sure that the process went as
+                                smoothly and swiftly as possible so that we were able to finalise our purchase with the
+                                minimum amount of stress.</p>
+                        </div>
+                        <p class="right-arrow2"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="latest-news">
+            <div class="container-fluid pt-5">
+                <div class="row mt-5 mb-2">
+                    <h5 class="text-center">Read Our Latest News</h5>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-4">
+                        <a href="">
+                            <h4>PARADE HOTEL DEVELOPMENT</h4>
+                            <p>18 Nov 2022</p>
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <a href="">
+                            <h4>Calpe Lodge / Albany House</h4>
+                            <p>18 Nov 2022</p>
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <a href="">
+                            <h4>The Olive Press Article</h4>
+                            <p>28 Oct 2022</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <a href="" class="text-center mx-auto my-4 purple-text right-arrow right-arrow-purple">READ MORE</a>
+                </div>
+            </div>
+        </section>
+        <section id="get-in-touch">
+            <div class="container-fluid mt-5">
+                <div class="row text-center ms-auto me-auto">
+                    <h6 class="white-text">GET IN TOUCH</h6>
+                    <h3>Talk to us about your next steps to buying or selling a property</h3>
+                    <a href="" class="right-arrow ms-auto me-auto"></a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bgc--dark-purple">
+        <div class="container mb-4">
+            <div class="row">
+                <div class="col-12 col-sm-3 text-center">
+                    <img src="assets/img/bfagib-logo-white.png" alt="Brian Francis & Associates white logotype">
+                </div>
+                <div class="col-12 col-sm-6 text-center text-sm-end">
+                    <ul class="ps-0 mt-4 mt-md-0">
+                        <li><a href="">BFA Estate Agency</a></li>
+                        <li><a href="">BFA Valuers</a></li>
+                        <li><a href="">BFA Mnagement</a></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-3 text-center text-sm-end">
+                    <img src="assets/img/rics-logo-white-full.png" alt="Rics white logotype">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row align-items-end">
+                <div class="col-12 col-md-6 text-center text-md-start">
+                    <ul id="pipe" class="d-flex ps-0 mb-0 gap-1 justify-content-center justify-content-md-start">
+                        <li><a href="">Terms of Use</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="">Cookie Policy</a></li>
+                    </ul>
+                    <p class="light-text mb-0">Copyright © 2022 Brian Francis & Associates. All Rights Reserved.</p>
+                </div>
+                <div class="col-12 col-md-6 mt-4 mt-md-0">
+                    <ul class="d-flex justify-content-md-end justify-content-center gap-4">
+                        <li><a href="">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                    <path
+                                        d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" />
+                                </svg>
+                            </a></li>
+                        <li><a href="">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path
+                                        d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" />
+                                </svg>
+                            </a></li>
+                    </ul>
+                    <div class="row text-md-end text-center mt-4 mt-md-0"><a href="" class="light-text">Website Design
+                            by Piranha Designs</a></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div id="main-menu" class="bgc--dark-purple container-fluid">
+        <ul class="ps-0">
+            <li><a href="">ABOUT US</a></li>
+            <li><a href="">MEET THE TEAM</a></li>
+            <li><a href="">TESTIMONIALS</a></li>
+            <li><a href="">NEWS</a></li>
+            <li><a href="">CONTACT</a></li>
+        </ul>
+        <a href="" id="login-button"><i class="fa-regular fa-user"></i>LOGIN</a>
+        <ul class="social">
+            <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+        </ul>
+        <a href="" id="menu-logo">
+            <img src="assets/img/bfagib-logo-white.png" alt="">
+        </a>
+        <button id="close-menu-button">
+            <img src="assets/img/close-icon.png" alt="">
+        </button>
+    </div>
+    <script src="assets/vendor/popper.js/popper.min.js"></script>
+    <script src="assets/vendor/bootstrap-5.3.0-alpha3-dist/js/bootstrap.min.js"></script>
+    <script src="assets/vendor/bootstrap-select-1.13.2/bootstrap-select.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
